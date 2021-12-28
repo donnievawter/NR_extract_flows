@@ -4,3 +4,12 @@ It does the same thing you can do manually using the export menu but extracts fo
 You will have to enter the full path to your flows.json file and the full path to the directory where you want to save the files.
 The file names are the names of the tabs with any spaces replaced with an _ e.g. Flow_1
 The JSON file created is an array of objects, the first being the tab and subsequent being the nodes on the tabs.
+
+#Usage
+import Generate_Flow_Files.json into node-red
+change the path in the read file node to point to your flows.json
+change the path inthe function to point to the directory where the results are stored
+Deploy
+Click on the inject node to generate the files:
+WARNING: Each time you run this it will overwrite any earlier generated files.
+
