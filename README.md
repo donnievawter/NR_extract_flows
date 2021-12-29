@@ -11,5 +11,6 @@ The JSON file created is an array of objects, the first being the tab and subseq
 1. change the path inthe function to point to the directory where the results are stored
 1. Deploy
 1. Click on the inject node to generate the files:
+2. If you want to back up files after every deploy change the inject node to fix x seconds after startup instead of triggering manually. git is smart enough to realize the files are unchanged even if you overwrite so only flows that actually change will need to be committed.
 WARNING: Each time you run this it will overwrite any earlier generated files.
 
